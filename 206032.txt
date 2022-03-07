@@ -1,0 +1,81 @@
+cd SI_2022_lab1_206032
+git add shopping_list.txt
+git commit -m 'Add 5 items to the shopping list'
+git add shopping_list.txt
+git commit -m 'Add quantities to the items'
+git branch b1
+git branch b2
+git log
+-----------------------------------------------------------------------------------
+commit 6809296276ae9a843438e0019250dc6df8b3dd85 (HEAD -> master, b2, b1)
+Author: Tosic <toshestefan@gmail.com>
+Date:   Tue Mar 8 00:11:12 2022 +0100
+
+    Add quantities to the items
+
+commit 2ff504efa2b2a3686f118bf6bcd66be18ec7cff4
+Author: Tosic <toshestefan@gmail.com>
+Date:   Tue Mar 8 00:09:33 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit cb63aa613777c111d399907f597a508256b994f8 (origin/master, origin/HEAD)
+Author: toshestefan <100384226+toshestefan@users.noreply.github.com>
+Date:   Tue Mar 8 00:05:30 2022 +0100
+
+    Update README.md
+
+commit 932cb1ba1f59c6c907c8a1f0be6717d3c237d047
+Author: toshestefan <100384226+toshestefan@users.noreply.github.com>
+Date:   Tue Mar 8 00:05:09 2022 +0100
+
+    Initial commit
+
+-------------------------------------------------------------------------------------
+git checkout b1
+git add shopping_list.txt
+git commit -m 'Change quantity of item #5'
+git checkout master
+git add shopping_list.txt
+git commit -m 'Change quantity of item #2'
+git push --all
+git checkout b2
+git add shopping_list.txt
+git commit -m 'Modify item #4'
+git add shopping_list.txt
+git commit --amend -m ' and add item #6'
+
+git log --all
+Author: Tosic <toshestefan@gmail.com>
+Date:   Tue Mar 8 00:40:44 2022 +0100
+
+     and add item #6
+
+commit d76322fb847ea61f5585966c100549b581d00712 (origin/master, origin/HEAD, master)
+Author: Tosic <toshestefan@gmail.com>
+Date:   Tue Mar 8 00:37:28 2022 +0100
+
+    Change quantity of item #2
+
+commit 448c54c1cefd9d4bcedf105266f01106835ce1bd (origin/b1, b1)
+Author: Tosic <toshestefan@gmail.com>
+Date:   Tue Mar 8 00:36:42 2022 +0100
+
+    Change quantity of item #5
+
+commit 6809296276ae9a843438e0019250dc6df8b3dd85 (origin/b2)
+Author: Tosic <toshestefan@gmail.com>
+Date:   Tue Mar 8 00:11:12 2022 +0100
+
+git checkout master
+git merge b1
+git merge b2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+{napraviv izmena vo shopping_list.txt i napraviv commit}
+git add shopping_list.txt
+git commit -m 'commit for conflict'
+git merge b2
+git add 206032.txt
+git commit -m 'Add docs'
