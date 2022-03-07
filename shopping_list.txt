@@ -1,5 +1,5 @@
-bread
-meat
-potato
-tomatoes
-cucumber
+bread x 1
+meat x 1
+potato x 1
+tomatoes x 1
+cucumber x 1
