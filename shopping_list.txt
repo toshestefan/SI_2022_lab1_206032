@@ -1,11 +1,6 @@
 bread x 1
 meat x 2
 potato x 1
-<<<<<<< HEAD
-tomatoes x 1
-cucumber x 2
-=======
 cheese x 1
 cucumber x 1
 tomato x 1
->>>>>>> b2
