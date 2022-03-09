@@ -79,3 +79,5 @@ git commit -m 'commit for conflict'
 git merge b2
 git add 206032.txt
 git commit -m 'Add docs'
+git add shopping_list.txt
+git commit -m 'commit resolve'
